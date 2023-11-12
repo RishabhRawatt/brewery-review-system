@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+.home-h1,
+.username-home {
+  font-family: "Agbalumo", sans-serif;
+  color: #f3b664;
+  margin-left: 40%;
+}
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+.username-home {
+  margin-left: 10px;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #ec8f5e;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home_img {
+  width: 150px;
+  height: 150px;
+}
+.home-input {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.home-input input,
+select {
+  width: 250px;
+  height: 7vh;
+  border-radius: 8px;
+  font-size: larger;
+  border: none;
+  padding-left: 15px;
+}
+
+.search-results {
+  border: solid #ec8f5e 1px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #faedcd;
+}
+
+.home-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ec8f5e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.link-card {
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: "Courier New", Courier, monospace;
+  color: #bc6c25;
+}
+
+.card-subtitle {
+  color: #dda15e;
+}
+.card-city {
+  color: #283618;
+}
+.card {
+  margin: 10px;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.search-result-h2 {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  color: #283618;
+}
+
+.brew-details {
+  display: flex;
+  gap: 5rem;
+}

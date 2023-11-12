@@ -1,0 +1,36 @@
+.number.selected {
+  background-color: #ffc107;
+}
+.number {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.rating-box {
+  display: flex;
+  gap: 3rem;
+}
+
+.label-review {
+  color: #283618;
+  display: flex;
+  gap: 2rem;
+}
+.submit-rating {
+  background-color: #ffc107;
+  color: #283618;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 34%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform ease-in 0.3s;
+}
+
+.submit-rating:hover {
+  transform: scale(0.95);
+}

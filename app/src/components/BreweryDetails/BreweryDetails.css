@@ -1,0 +1,36 @@
+.top-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.city-s-p {
+  display: flex;
+  gap: 5rem;
+}
+
+.container-deatails {
+  background-color: #faedcd;
+  border: 1px solid #283618;
+  border-radius: 20px;
+}
+/* 
+.card-title {
+  color: #283618;
+} */
+
+.card-contact,
+.card-address {
+  font-size: medium;
+  color: #283618;
+}
+
+.review-btn {
+  background-color: #fb8500;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 90%;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 5px;
+}

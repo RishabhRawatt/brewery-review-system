@@ -1,0 +1,28 @@
+.login-h1 {
+  color: #f3b664;
+}
+
+.btn-login,
+.btn-logout {
+  background-color: #f3b664;
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 7px;
+  height: 50px;
+  width: 150px;
+}
+
+.div-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+
+.welcome-btn {
+  display: flex;
+  gap: 3rem;
+}
