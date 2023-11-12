@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Review.css";
+import { API_BASE_URL } from "../../config.js";
 
 const Reviews = ({ shopId }) => {
   const [reviews, setReviews] = useState([]);
@@ -11,7 +12,7 @@ const Reviews = ({ shopId }) => {
     const fetchReviews = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/reviews/${shopId}`
+          `${API_BASE_URL}/api/reviews/${shopId}`
         );
         setReviews(response.data);
         calculateAverageRating(response.data);

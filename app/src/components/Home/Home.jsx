@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { API_BASE_URL } from "../../config.js";
 
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
@@ -25,7 +26,7 @@ const Home = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:3000/user/me", {
+        const response = await axios.get(`${API_BASE_URL}/user/me`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -48,7 +48,7 @@ const AddReviewForm = ({ shopId, onClose, onReviewSubmit }) => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/reviews/${shopId}`,
+        `${API_BASE_URL}/api/reviews/${shopId}`,
         {
           shopId,
           user: username,
