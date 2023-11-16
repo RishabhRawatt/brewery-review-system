@@ -69,31 +69,47 @@ const SignupForm = () => {
     }
   };
 
+  const splitTextIntoSpans = (text) => {
+    return text.split("").map((letter, idx) => (
+      <span key={idx} style={{ transitionDelay: `${idx * 50}ms` }}>
+        {letter}
+      </span>
+    ));
+  };
+
   return (
     <div className="page-div">
-      <div className="signup-div">
-        <h1 className="signup-h1">Signup</h1>
+      <div className="sform-div">
+        <h1>Signup</h1>
         <form className="form-data">
-          <label>Username</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+          <div className="form-control">
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            {!username && <label>{splitTextIntoSpans("Username")}</label>}
+          </div>
 
-          <label>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <div className="form-control">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-          <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+            {!email && <label>{splitTextIntoSpans("Email")}</label>}
+          </div>
+
+          <div className="form-control">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {!password && <label>{splitTextIntoSpans("Password")}</label>}
+          </div>
+
           <button className="login-btn" type="button" onClick={handleSignup}>
             Signup
           </button>

@@ -5,7 +5,7 @@ const ProtectedRoute = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Check if JWT is present in localStorage or your preferred storage
+    // Checking if JWT is present in localStorage or your preferred storage
     const token = localStorage.getItem("token");
 
     if (!token) {

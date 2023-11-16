@@ -27,13 +27,13 @@ const AddReviewForm = ({ shopId, onClose, onReviewSubmit }) => {
           },
         });
 
-        // Assuming the server responds with user data, including the username
+        // Assum the server responds with user data, including the username
         const userData = response.data;
 
         // Set the username state
         setUsername(userData.username);
       } catch (error) {
-        // Handle error, e.g., token expiration, network issues, etc.
+        // Handling error, token expiration, network issues, etc.
         console.error("Error fetching username:", error);
       }
     };

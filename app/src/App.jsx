@@ -11,6 +11,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Welcome />} />
+
         <Route
           path="/home"
           element={
@@ -19,6 +20,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/brewery/:id"
           element={
@@ -27,6 +29,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignupForm />} />
       </Routes>

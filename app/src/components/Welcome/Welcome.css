@@ -11,6 +11,14 @@
   border-radius: 7px;
   height: 50px;
   width: 150px;
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-logout:hover {
+  color: #f3b664;
+  background-color: white;
+  border: 2px solid;
 }
 
 .div-login {

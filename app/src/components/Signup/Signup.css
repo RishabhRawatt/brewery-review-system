@@ -1,9 +1,21 @@
-.signup-div {
-  background-color: #d0b548;
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px grey;
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Ubuntu:wght@300&display=swap");
+
+.sform-div h1 {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: #ffc603;
+  text-align: center;
+  margin: 30px;
+}
+.sform-div {
+  background-color: #706677;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+label {
+  font-family: "Ubuntu", sans-serif;
+  color: #fefae0;
+  margin-top: 7px;
 }
 
 .form-data {
@@ -11,7 +23,41 @@
   padding: 0 30px;
 }
 
-.signup-h1 {
-  text-align: center;
-  color: #fefae0;
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px white solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-bottom-color: #fdce4c;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span {
+  color: #fdce4c;
+  transform: translateY(-30px);
 }

@@ -57,23 +57,40 @@ const LoginForm = () => {
     }
   };
 
+  const splitTextIntoSpans = (text) => {
+    return text.split("").map((letter, idx) => (
+      <span key={idx} style={{ transitionDelay: `${idx * 50}ms` }}>
+        {letter}
+      </span>
+    ));
+  };
+
   return (
     <div className="page-div">
       <div className="form-div">
         <h1>Login</h1>
+
         <form className="form-data">
-          <label>Username </label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <label>Password </label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="form-control">
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+
+            {!username && <label>{splitTextIntoSpans("Username")}</label>}
+          </div>
+
+          <div className="form-control">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            {!password && <label>{splitTextIntoSpans("Password")}</label>}
+          </div>
+
           <button className="login-btn" type="button" onClick={handleLogin}>
             Login
           </button>
