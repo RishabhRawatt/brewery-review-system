@@ -16,7 +16,7 @@ const registerUser = async (req, res) => {
         .json({ message: "Username or email is already in use" });
     }
 
-    // Hash the password
+    // Hashing the password
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Create a new user using the User model
